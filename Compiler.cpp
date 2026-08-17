@@ -14,7 +14,7 @@
 #include <algorithm>  // std::transform (used by str to upper/lower)
 
 // ============================================================
-// COMMAND ID ENUM  – every recognised command gets one value
+// COMMAND ID ENUM  â€“ every recognised command gets one value
 // ============================================================
 enum class Cmd {
     UNKNOWN,
@@ -68,7 +68,7 @@ enum class Cmd {
 };
 
 // ============================================================
-// COMMAND LOOKUP TABLE  – maps command strings ? Cmd enum
+// COMMAND LOOKUP TABLE  â€“ maps command strings ? Cmd enum
 // Using an unordered_map for O(1) dispatch instead of a chain
 // of if-else comparisons.
 // ============================================================
@@ -185,7 +185,7 @@ int clean_stoi(const std::string& input, int fallback_value = 0) {
     }
 }
 
-// Safe integer index into a list – prints an error and returns false on bad index
+// Safe integer index into a list â€“ prints an error and returns false on bad index
 template<typename Vec>
 bool checkIndex(const Vec& v, int idx, const std::string& listname) {
     if (idx < 0 || idx >= (int)v.size()) {
@@ -209,8 +209,7 @@ void growStruct(std::vector<Multitype>& s, int slotindex) {
 // ============================================================
 // MAIN
 // ============================================================
-int main() {
-    std::cout << "type file name for compiling: ";
+int main(int argc, char* argv[]) {
     easystring UserText;
     std::string userfile;
     std::string temp;
@@ -222,7 +221,18 @@ int main() {
     std::unordered_map<std::string, std::vector<std::string>> str_lists;
     std::unordered_map<std::string, std::vector<Multitype>> structs;
 
-    std::cin >> userfile;
+    // --- NEW: Command mode check ---
+    // If we have at least 3 arguments (compiler.exe, 2, filename) 
+    // and the first argument is "2", use the second argument as the file.
+    if (argc >= 3 && std::string(argv[1]) == "2") {
+        userfile = argv[2];
+    } else {
+        // Fallback: standard manual input if not launched by the IDE
+        std::cout << "type file name for compiling: ";
+        std::cin >> userfile;
+    }
+    // -------------------------------
+
     std::fstream script(userfile);
     if (!script.is_open()) {
         std::cerr << "[error] could not open file: " << userfile << "\n";
@@ -266,7 +276,7 @@ int main() {
         UserText = line;
         int commandpos = UserText.findindex(",");
         if (commandpos == -1) {
-            // No comma – could be a blank line or a comment (lines starting with #)
+            // No comma â€“ could be a blank line or a comment (lines starting with #)
             std::string tl = trim(line);
             if (!tl.empty() && tl[0] != '#')
                 std::cerr << "[warning] unrecognised line (no comma): " << line << "\n";
