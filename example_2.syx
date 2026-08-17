@@ -1,0 +1,3 @@
+set and randomgennum,toprint.1-100
+
+print int,toprint

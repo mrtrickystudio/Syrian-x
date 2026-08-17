@@ -1,0 +1,332 @@
+int var,score.0
+int var,streak.0
+int var,length.3
+int var,winsneeded.2
+int var,zero.0
+int var,maxlength.16
+int var,buildcount.0
+int var,rng.0
+int var,picked.0
+
+str var,challenge.
+str var,guess.
+str var,scorestr.
+str var,lengthstr.
+str var,streakstr.
+str var,winsstr.
+str var,pickedchar.
+
+save,rngtochar.if int equal,rng.0!c0
+if int equal,rng.1!c1
+if int equal,rng.2!c2
+if int equal,rng.3!c3
+if int equal,rng.4!c4
+if int equal,rng.5!c5
+if int equal,rng.6!c6
+if int equal,rng.7!c7
+if int equal,rng.8!c8
+if int equal,rng.9!c9
+if int equal,rng.10!c10
+if int equal,rng.11!c11
+if int equal,rng.12!c12
+if int equal,rng.13!c13
+if int equal,rng.14!c14
+if int equal,rng.15!c15
+if int equal,rng.16!c16
+if int equal,rng.17!c17
+if int equal,rng.18!c18
+if int equal,rng.19!c19
+if int equal,rng.20!c20
+if int equal,rng.21!c21
+if int equal,rng.22!c22
+if int equal,rng.23!c23
+if int equal,rng.24!c24
+if int equal,rng.25!c25
+if int equal,rng.26!c26
+if int equal,rng.27!c27
+if int equal,rng.28!c28
+if int equal,rng.29!c29
+if int equal,rng.30!c30
+if int equal,rng.31!c31
+if int equal,rng.32!c32
+if int equal,rng.33!c33
+if int equal,rng.34!c34
+if int equal,rng.35!c35
+if int equal,rng.36!c36
+if int equal,rng.37!c37
+if int equal,rng.38!c38
+if int equal,rng.39!c39
+if int equal,rng.40!c40
+if int equal,rng.41!c41
+if int equal,rng.42!c42
+if int equal,rng.43!c43
+if int equal,rng.44!c44
+if int equal,rng.45!c45
+if int equal,rng.46!c46
+if int equal,rng.47!c47
+if int equal,rng.48!c48
+if int equal,rng.49!c49
+if int equal,rng.50!c50
+if int equal,rng.51!c51
+if int equal,rng.52!c52
+if int equal,rng.53!c53
+if int equal,rng.54!c54
+if int equal,rng.55!c55
+if int equal,rng.56!c56
+if int equal,rng.57!c57
+if int equal,rng.58!c58
+if int equal,rng.59!c59
+if int equal,rng.60!c60
+if int equal,rng.61!c61
+if int equal,rng.62!c62
+if int equal,rng.63!c63
+if int equal,rng.64!c64
+if int equal,rng.65!c65
+if int equal,rng.66!c66
+if int equal,rng.67!c67
+end
+
+save,c0.Change str,pickedchar.a
+end
+save,c1.Change str,pickedchar.b
+end
+save,c2.Change str,pickedchar.c
+end
+save,c3.Change str,pickedchar.d
+end
+save,c4.Change str,pickedchar.e
+end
+save,c5.Change str,pickedchar.f
+end
+save,c6.Change str,pickedchar.g
+end
+save,c7.Change str,pickedchar.h
+end
+save,c8.Change str,pickedchar.i
+end
+save,c9.Change str,pickedchar.j
+end
+save,c10.Change str,pickedchar.k
+end
+save,c11.Change str,pickedchar.l
+end
+save,c12.Change str,pickedchar.m
+end
+save,c13.Change str,pickedchar.n
+end
+save,c14.Change str,pickedchar.o
+end
+save,c15.Change str,pickedchar.p
+end
+save,c16.Change str,pickedchar.q
+end
+save,c17.Change str,pickedchar.r
+end
+save,c18.Change str,pickedchar.s
+end
+save,c19.Change str,pickedchar.t
+end
+save,c20.Change str,pickedchar.u
+end
+save,c21.Change str,pickedchar.v
+end
+save,c22.Change str,pickedchar.w
+end
+save,c23.Change str,pickedchar.x
+end
+save,c24.Change str,pickedchar.y
+end
+save,c25.Change str,pickedchar.z
+end
+save,c26.Change str,pickedchar.A
+end
+save,c27.Change str,pickedchar.B
+end
+save,c28.Change str,pickedchar.C
+end
+save,c29.Change str,pickedchar.D
+end
+save,c30.Change str,pickedchar.E
+end
+save,c31.Change str,pickedchar.F
+end
+save,c32.Change str,pickedchar.G
+end
+save,c33.Change str,pickedchar.H
+end
+save,c34.Change str,pickedchar.I
+end
+save,c35.Change str,pickedchar.J
+end
+save,c36.Change str,pickedchar.K
+end
+save,c37.Change str,pickedchar.L
+end
+save,c38.Change str,pickedchar.M
+end
+save,c39.Change str,pickedchar.N
+end
+save,c40.Change str,pickedchar.O
+end
+save,c41.Change str,pickedchar.P
+end
+save,c42.Change str,pickedchar.Q
+end
+save,c43.Change str,pickedchar.R
+end
+save,c44.Change str,pickedchar.S
+end
+save,c45.Change str,pickedchar.T
+end
+save,c46.Change str,pickedchar.U
+end
+save,c47.Change str,pickedchar.V
+end
+save,c48.Change str,pickedchar.W
+end
+save,c49.Change str,pickedchar.X
+end
+save,c50.Change str,pickedchar.Y
+end
+save,c51.Change str,pickedchar.Z
+end
+save,c52.Change str,pickedchar.0
+end
+save,c53.Change str,pickedchar.1
+end
+save,c54.Change str,pickedchar.2
+end
+save,c55.Change str,pickedchar.3
+end
+save,c56.Change str,pickedchar.4
+end
+save,c57.Change str,pickedchar.5
+end
+save,c58.Change str,pickedchar.6
+end
+save,c59.Change str,pickedchar.7
+end
+save,c60.Change str,pickedchar.8
+end
+save,c61.Change str,pickedchar.9
+end
+save,c62.Change str,pickedchar.!
+end
+save,c63.Change str,pickedchar.@
+end
+save,c64.Change str,pickedchar.#
+end
+save,c65.Change str,pickedchar.$
+end
+save,c66.Change str,pickedchar.%
+end
+save,c67.Change str,pickedchar.*
+end
+
+save,addchar.set and randomgennum,rng.0-67
+execute,rngtochar
+append str,challenge.pickedchar
+inc,buildcount
+end
+
+save,buildchallenge.Change str,challenge.
+Change int,buildcount.0
+while int less,buildcount.length!addchar
+end
+
+save,showstatus.int to str,score
+Change str,scorestr.SCORE: 
+int to str,score
+append str,scorestr.score
+Change str,lengthstr. | LENGTH: 
+append str,scorestr.lengthstr
+int to str,length
+append str,scorestr.length
+Change str,lengthstr. chars
+append str,scorestr.lengthstr
+Change str,streakstr. | STREAK: 
+append str,scorestr.streakstr
+int to str,streak
+append str,scorestr.streak
+Change str,winsstr./
+append str,scorestr.winsstr
+int to str,winsneeded
+append str,scorestr.winsneeded
+print str,scorestr
+end
+
+save,doround.clear screen
+execute,showstatus
+print,----------------------------------------
+print,Type exactly what you see - case sensitive!
+print,
+no new line print,>>> 
+print str,challenge
+print,
+print,----------------------------------------
+no new line print,Your input: 
+set str to input,guess
+if str equal,guess.challenge!correct
+if str not equal,guess.challenge!wrong
+end
+
+save,correct.clear screen
+print,
+print, *** CORRECT! Great job! ***
+print,
+inc,score
+inc,streak
+if int equal,streak.winsneeded!growstring
+execute,buildchallenge
+execute,doround
+end
+
+save,wrong.clear screen
+print,
+print, XXX WRONG! XXX
+print,
+Change int to int,streak.zero
+print, The correct string was:
+no new line print,  >>> 
+print str,challenge
+print,
+print,  Press ENTER to try a new round...
+set str to input,guess
+execute,buildchallenge
+execute,doround
+end
+
+save,growstring.Change int to int,streak.zero
+inc,length
+print,
+print, *** STRING LENGTH UP! ***
+print,
+if int equal,length.maxlength!hitcap
+if int less,length.maxlength!updatethreshold
+end
+
+save,updatethreshold.Change int to int,winsneeded.length
+end
+
+save,hitcap.Change int,winsneeded.16
+Change int,length.16
+print, *** MAX DIFFICULTY REACHED - LENGTH 16! ***
+print,
+end
+
+print,========================================
+print,     QUICK TYPE  -  syx lang edition   
+print,========================================
+print,
+print, A random string will appear on screen.
+print, Type it EXACTLY as shown (case matters!)
+print,
+print, Win enough rounds in a row to make the
+print, string longer - and the wins needed grows too!
+print,
+print, Max string length: 16 characters
+print,
+print, Press ENTER to begin...
+set str to input,guess
+execute,buildchallenge
+execute,doround

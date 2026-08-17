@@ -1,0 +1,30 @@
+int var,userchoice.0
+int var,randomnum.0
+int var,A.0
+int var,B.1
+set and randomgennum,randomnum.1-100
+save,toobig.
+print,too big!
+pause,1
+clear screen,
+print,am thinking of a number from 0 to 100
+end
+save,toosmall.
+print,too small!
+pause,1
+clear screen,
+print,am thinking of a number from 0 to 100
+end
+save,win.
+print,you win!
+pause, 1
+clear screen,
+finish,
+end
+save,game.
+set int to input,userchoice
+if int equal,userchoice.randomnum!win
+if int more,userchoice.randomnum!toobig
+if int less,userchoice.randomnum!toosmall
+end
+while int less,A.B!game
