@@ -1,0 +1,22 @@
+int var,a.0
+int var,b.1
+int var,temp.0
+int var,count.0
+int var,max.10
+
+save,calc.
+add and set,temp.a+b
+set int to int,a.b
+set int to int,b.temp
+print int,a
+print,
+inc,count
+end
+
+int var,one.1
+
+print,Fibonacci Sequence:
+print int,a
+print,
+
+while int less,count.max!calc

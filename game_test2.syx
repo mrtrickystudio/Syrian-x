@@ -1,0 +1,38 @@
+int var,toguess.0
+set and randomgennum,toguess.1-100
+int var,state.0
+int var,playstate.1
+
+save,win.
+int var,two.2
+set int to int,state.two
+print, you won!
+finish,
+end
+
+save,toobig.
+print, toobig!
+pause,1
+clear screen,
+end
+
+save,toosmall.
+print, too small!
+pause,1
+clear screen,
+end
+
+save,breaking.
+finish,
+end
+
+save,game.
+int var,userguess
+set int to input,userguess
+if int equal,toguess.userguess!win
+if int less,userguess.toguess!toosmall
+if int more,userguess.toguess!toobig
+end
+
+while int less,state.playstate!game
+while int more,state.playstate!breaking
