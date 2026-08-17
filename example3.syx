@@ -1,0 +1,10 @@
+oh wow i dont need anything to make comments
+int var,test1.20
+int var,test2.20
+save,check1.print,they are equal
+save,correct.repeat,4.check1
+
+if int equal,test1.test2!correct
+pause,2
+str var,test3.strings works
+print str,test3
